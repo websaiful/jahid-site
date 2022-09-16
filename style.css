@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media (min-width:768px){
+    .header{
+        background-color: #1B1464;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 100px;
+    }
+    .menu-bar ul{
+        display: flex;
+    }
+    .menu-bar ul li{
+    margin: 10px 10px;
+    }
+    .menu-bar ul li a{
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .logo{
+        color: #fff;
+        
+    
+    }
+    .logo h2{
+        font-weight: bold;
+    }
+    #check{
+        display: none;
+    }
+    #toggle{
+        display: none;
+    }
+    /* content design */
+    .content{
+        background-image: url('img/274318-desk-office-mouse-and-laptop-hd.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        text-align: center
+    }
+    .title h1{
+        padding-top: 200px;
+        color: #fff;
+        font-size: 90px;    
+    }
+    .title h2{
+        color: #fff;
+        font-size: 80px;
+    }
+    .social-icon{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .social-icon i{
+        font-size: 35px;
+        background-color: crimson;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 50%;
+        color: #fff;
+        transition: .5s;
+        border: 3px solid white;
+        margin-right: 10px;
+        
+    }
+    .social-icon i:hover{
+        transform: rotate(360deg);
+    }
+    .contact{
+        color: #fff;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: crimson;
+        padding: 5px 25px;
+        border-radius: 0px 30px 0px 30px;
+        transition: .5s;
+    }
+    .contact:hover{
+        color: black;
+        background-color: rgb(196, 13, 49);
+        
+    }
+    /* footer section design */
+    footer{
+        background-color: #03033B;
+        padding-bottom: 15px;
+    }
+    .list{
+        width: 1000px;
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        margin-top: 20px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    h3{
+        color: gray;
+        text-align: center;
+        margin-top: 55px;
+    }
+}
+@media (max-width:768px){
+.header{
+    background-color: #1B1464;
+    height: 40px;
+  }
+  .menu-bar{
+    position: absolute;
+    background-color: #1B1464;
+    width: 250px;
+    top: 40px;
+    height: 300px;
+    text-align: center;
+    transform: translateX(-250px);
+    transition: .5s;
+  }
+  .menu-bar ul{
+
+  }
+  .menu-bar ul li{
+    margin: 30px 0px;
+   
+    
+
+  }
+  .menu-bar ul li a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    
+    padding: 10px 30px;
+  }
+  .menu-bar ul li a:hover{
+    box-shadow: 0px 0px 5px cyan;
+  }
+  .logo{
+    float: right;
+  }
+  .logo h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 10px;
+    margin-top: 5px;
+    
+  }
+  #toggle i{
+       color: #fff;
+       font-size: 20px;
+       padding: 5px 10px;
+
+  }
+  #check:checked ~ .menu-bar{
+    transform: translateX(0);
+  }
+  #check:checked ~ #toggle i:before{
+    content: "\f00d";
+  }
+  /* navigation bar design end here */
+
+  /* content design start here */
+  .content{
+    background-image: url('img/274318-desk-office-mouse-and-laptop-hd.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center
+}
+.title h1{
+    padding-top: 100px;
+    color: #fff;
+    font-size: 90px;    
+}
+.title h2{
+    color: #fff;
+    font-size: 80px;
+}
+.social-icon{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.social-icon i{
+    font-size: 35px;
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    color: #fff;
+    transition: .5s;
+    border: 3px solid white;
+    margin-right: 10px;
+    
+}
+.social-icon i:hover{
+    transform: rotate(360deg);
+}
+.contact{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: crimson;
+    padding: 5px 25px;
+    border-radius: 0px 30px 0px 30px;
+    transition: .5s;
+}
+.contact:hover{
+    color: black;
+    background-color: rgb(196, 13, 49);
+    
+}
+/* content design end here */
+
+/* footer section design start here */
+footer{
+    background-color: #03033B;
+    padding-bottom: 15px;
+}
+.list{
+    width: 500px;
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin-top: 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+h3{
+    color: gray;
+    text-align: center;
+    margin-top: 55px;
+}
+/* footer section design end here */
+
+}
